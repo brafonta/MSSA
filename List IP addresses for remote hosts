@@ -1,0 +1,8 @@
+
+#This script will list the IP address for a remote host
+
+$RemoteHost = "www.example.com"
+
+$IPAddress = [System.Net.Dns]::GetHostAddresses($RemoteHost)
+
+Write-Host "IP address of $RemoteHost is $IPAddress"
